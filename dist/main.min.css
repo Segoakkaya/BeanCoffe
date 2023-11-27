@@ -17119,6 +17119,14 @@ html {
   -webkit-font-smoothing: antialiased;
 }
 
+.header-custom-container {
+  padding: 20px 180px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 999;
+}
+
 .mobile-menu-btn {
   width: 100%;
   max-width: 35px;
