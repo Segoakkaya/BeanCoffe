@@ -1,15 +1,96 @@
 html {
     -webkit-font-smoothing: antialiased;
 }
+::-webkit-scrollbar {
+    height: 3px;
+    width: 7px
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+::-webkit-scrollbar-thumb {
+    background: #f9c06a;
+    border-radius: 10px
+}
 .header-custom-container{
-    padding: 20px 180px;
+    padding: 25px 180px;
     position: fixed;
     top: 0px;
     width: 100%;
     z-index: 999;
+    transition: padding .3s ease;
 }
-@media (max-width:1366px) { }
-@include media-breakpoint-down(lg)  { }
-@include media-breakpoint-down(md)  { }
-@include media-breakpoint-down(sm)  { }
+.hero_container{
+    padding: 201px 180px;
+}
+.custom-container{
+    margin:150px 180px;
+}
+.morning-custom-container{
+    padding: 135px 180px;
+    z-index: 999;
+    position: absolute;
+}
+@media (max-width:1366px) {
+    .header-custom-container{
+    padding: 25px 93px;
+}
+.hero_container{
+    padding: 201px 93px;
+}
+.custom-container{
+    margin:201px 93px;
+}
+.morning-custom-container{
+    padding: 135px 93px;
+}
+
+}
+@include media-breakpoint-down(lg)  {
+    .header-custom-container{
+        padding: 20px 93px !important;
+    }
+.hero_container{
+    padding: 183px 93px !important;
+}
+
+.custom-container{
+    margin:201px 93px;
+}
+.morning-custom-container{
+    padding: 135px 93px;
+}
+ }
+@include media-breakpoint-down(md)  {
+    .hero_container{
+        padding: 183px 50px !important;
+    }
+    .header-custom-container{
+        padding: 20px 50px !important;
+    }
+    .custom-container{
+        margin:130px 50px;
+    }
+    .morning-custom-container{
+        padding: 100px 50px;
+    }
+ }
+@include media-breakpoint-down(sm)  { 
+    .header-custom-container{
+        padding: 20px 25px !important;
+    }
+    .hero_container{
+        padding: 183px 25px !important;
+    }
+    .custom-container{
+        margin:100px 25px;
+    }
+    .morning-custom-container{
+        padding: 75px 25px;
+    }
+}
 @include media-breakpoint-down(def) { }

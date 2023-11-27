@@ -1,6 +1,8 @@
 $color--white               : #FFFFFF;
 $color--black               : #000000;
-
+$color--coffee               : #603809;
+$color--gold                 : #F9C06A;
+$color--grey                 : #707070;
 .color--white               { color: $color--white!important; }
 .bg--white                  { background-color: $color--white!important; }
 .br--white                  { border-color: $color--white!important; }
@@ -8,3 +10,17 @@ $color--black               : #000000;
 .color--black               { color: $color--black!important; }
 .bg--black                  { background-color: $color--black!important; }
 .br--black                  { border-color: $color--black!important; }
+
+.color--coffe               { color: $color--coffee!important; }
+.bg--coffe                  { background-color: $color--coffee!important; }
+.br--coffe                  { border-color: $color--coffee!important; }
+
+
+.color--gold               { color: $color--gold !important; }
+.bg--gold                  { background-color: $color--gold !important; }
+.br--gold                  { border-color: $color--gold !important; }
+
+
+.color--grey               { color: $color--grey !important; }
+.bg--grey                  { background-color: $color--grey !important; }
+.br--grey                  { border-color: $color--grey !important; }

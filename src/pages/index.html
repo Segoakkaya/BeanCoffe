@@ -1,17 +1,285 @@
 <!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta name="apple-mobile-web-app-capable" content="yes"/>
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
-    <meta id="viewport" name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
-    <title>Html-Webpack-Template</title>
-  </head>
-  <body data-template="index">
-    <headerpartial></headerpartial>
-    <div class="hero">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta id="viewport" name="viewport"
+    content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <title>Html-Webpack-Template</title>
+</head>
+
+<body data-template="index">
+  <headerpartial></headerpartial>
+  <section class="hero">
+    <div class="hero_container">
+      <div class="hero_container_title">We’ve got your morning covered with</div>
+      <div class="hero_container_content">
+        Coffee
+      </div>
+      <div class="hero_container_text">
+        It is best to start your day with a cup of coffee. Discover the
+        best flavours coffee you will ever have. We provide the best
+        for our customers.
+      </div>
+      <div class="hero_container_Btn">
+        <a href="#" class="heroBtn">Order Now</a>
+      </div>
     </div>
-  </body>
+  </section>
+  <section class="discover">
+    <div class="custom-container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column gap-5">
+          <div class="discover-title">
+            Discover the best coffee
+          </div>
+          <div class="discover-text">
+            Bean Scene is a coffee shop that provides you with quality coffee that helps boost your productivity and
+            helps build your mood. Having a cup of coffee is good, but having a cup of real coffee is greater. There is
+            no doubt that you will enjoy this coffee more than others you have ever tasted.
+          </div>
+          <div class="discover-btn">
+            <a href="#" class="discoverBtn">Learn More</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="discover-img">
+            <img src="../assets/img/discover-image.webp">
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="../assets/img/decor_01.webp" class="discover-decor">
+  </section>
+  <section class="enjoy">
+    <div class="custom-container">
+      <span class="enjoy-title">Enjoyy a new blend of coffee style</span>
+      <span class="enjoy-smallText">Explore all flavours of coffee with us. There is always a new cup worth
+        experiencing</span>
+      <div class="cards d-none d-md-block d-lg-block">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_01.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Cappuccino</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_02.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Chai Latte</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_03.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Macchiato</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_04.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Expresso</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cards d-block d-md-none d-lg-none">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_01.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Cappuccino</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_02.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Chai Latte</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_03.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Macchiato</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="enjoy-card">
+              <div class="enjoy-card_img">
+                <img src="../assets/img/enjoy-image_04.webp">
+              </div>
+              <div class="enjoy-card_title">
+                <span class="enjoy-card_title-name">Expresso</span>
+                <span class="enjoy-card_title-about">Coffee 50% | Milk 50%</span>
+                <span class="enjoy-card_title-price">$8.50</span>
+              </div>
+              <div class="enjoy-card-btn">
+                <a href="#" class="enjoy-card-btn-a">Order Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="different">
+    <img src="../assets/img/decor_02.webp" class="different-decor">
+    <div class="custom-container">
+      <span class="different-title">Why are we different?</span>
+      <span class="different-smallText">We don’t just make your coffee, we make your day!</span>
+      <div class="cards">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="different-card">
+              <div class="different-card-img">
+                <img src="../assets/img/why-icon_01.webp">
+              </div>
+              <div class="different-card-title">
+                Supreme Beans
+              </div>
+              <div class="different-card-smallText">
+                Beans that provides
+                great taste
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="different-card">
+              <div class="different-card-img">
+                <img src="../assets/img/why-icon_02.webp">
+              </div>
+              <div class="different-card-title">
+                High Quality
+              </div>
+              <div class="different-card-smallText">
+                We provide the
+                highest quality
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="different-card">
+              <div class="different-card-img">
+                <img src="../assets/img/why-icon_03.webp">
+              </div>
+              <div class="different-card-title">
+                Extraordinary 
+              </div>
+              <div class="different-card-smallText">
+                Coffee like you have
+                never tasted
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-12">
+            <div class="different-card">
+              <div class="different-card-img">
+                <img src="../assets/img/why-icon_04.webp">
+              </div>
+              <div class="different-card-title">
+                Affordable Price
+              </div>
+              <div class="different-card-smallText">
+                Our Coffee prices are
+                easy to afford
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <span class="different-smallText fs-6">Great ideas start with great coffee, Lets help you achieve that</span>
+      <span class="different-title fs-3">Get started today.</span>
+      <div class="different-btn">
+        <a href="#" class="different-btn-a">Join Us</a>
+      </div>
+    </div>
+  </section>
+  <section class="morning">
+    <img src="../assets/img/banner-img_cup.webp" class="morning-decor1">
+    <img src="../assets/img/banner-img_coffe.webp" class="morning-decor2">
+    <div class="morning-custom-container">
+      <div class="morning-title">
+        Get a chance to have an
+        Amazing morning
+      </div>
+      <div class="morning-text">
+        We are giving you are one time opportunity to
+experience a better life with coffee.
+      </div>
+      <div class="morning-btn">
+        <a href="#">Order Now</a>
+      </div>
+    </div>
+  </section>
+</body>
+
 </html>

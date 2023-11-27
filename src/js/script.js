@@ -157,6 +157,34 @@
                         break;
                 }
             });
+            $(".burger").on("click",function(){
+                $('.header-menu').toggleClass("open-menu");
+            });
+            $( window ).on( "scroll", function() {
+                if ($(this).scrollTop() > 1){  
+                    $('.header-custom-container').addClass("navbar-shrink");
+                  }
+                  else{
+                    $('.header-custom-container').removeClass("navbar-shrink");
+                  }
+            });
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:10,
+                nav:false,
+                dots:true,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    600:{
+                        items:1
+                    },
+                    1000:{
+                        items:1
+                    }
+                }
+            })
         },
         utility: {
             cookie: {
