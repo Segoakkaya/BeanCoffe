@@ -209,6 +209,9 @@
             $(".prev").on("click", function () {
                 owl.trigger('prev.owl.carousel');
             });
+            $(".burger").on("click",function(){
+                $(this).toggleClass("close");
+            });
         },
         utility: {
             cookie: {

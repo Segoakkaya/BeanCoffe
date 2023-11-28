@@ -1,3 +1,14 @@
+.close{
+    background-image: url(./assets/img/close.svg);
+    background-repeat: no-repeat;
+    width: 35px;
+    height: 35px;
+    background-size: 100%;
+        img{
+            display: none;
+    transition: 0.3s all;
+        }
+}
 .logo {
     text-decoration: none;
     color: #FFF;
