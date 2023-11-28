@@ -3,7 +3,7 @@
     var script = {};
     script.version = '1.0.0';
 
-    script.app = { 
+    script.app = {
         isMobile: function () {
             var e = !1;
             (/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(
@@ -23,12 +23,12 @@
             }
             e() > 0 && e() < 12 && $("body").addClass("ie-mode");
         },
-        mobilemenu:function(){
+        mobilemenu: function () {
 
             $("*[data-mobilemenu='true']").each(function () {
                 $(this).mnav();
-                $(this).css({"opacity":"1"});
-        
+                $(this).css({ "opacity": "1" });
+
                 var api = $(this).data("mnav");
 
                 $(this).prepend("<a href=\"javascript:void(0);\" class=\"mobilemenu-close\"><i class='icon-close' /></a>");
@@ -38,100 +38,100 @@
                 });
             });
         },
-        owlInit:function(){
+        owlInit: function () {
 
-            $("*[data-owl]").each(function(){
+            $("*[data-owl]").each(function () {
                 var slider = $(this);
-                var loop = $(this).find(".item").length > 1 && $(this).attr("data-loop")!=undefined ? $.parseJSON($(this).attr("data-loop")) : false;
-                var nav = $(this).find(".item").length > 1 && $(this).attr("data-nav")!=undefined ? $.parseJSON($(this).attr("data-nav")) : false;
-                var dots = $(this).attr("data-dots")!=undefined ? $.parseJSON($(this).attr("data-dots")) : false;
-                var items = $(this).attr("data-items") !=undefined ? parseInt($(this).attr("data-items")) : 1;
-                var autoplay = $(this).attr("data-autoplay")!=undefined ? $.parseJSON( $(this).attr("data-autoplay")) : false;
-                var margin = $(this).attr("data-margin")!=undefined ? parseInt($(this).attr("data-margin")) : 0;
-                var xs = $(this).attr("data-xs")!=undefined ? parseInt($(this).attr("data-xs")) : items;
-                var sm = $(this).attr("data-sm")!=undefined ? parseInt($(this).attr("data-sm")) : items;
-                var md = $(this).attr("data-md")!=undefined ? parseInt($(this).attr("data-md")) : items;
-                var lg = $(this).attr("data-lg")!=undefined ? parseInt($(this).attr("data-lg")) : items;
-                var autoHeight = $(this).attr("data-autoheight")!=undefined ? $.parseJSON( $(this).attr("data-autoheight")) : false;
-                var dotContainer = $(this).attr("data-dotcontainer")!=undefined ? $.parseJSON($(this).attr("data-dotcontainer")) : false;
+                var loop = $(this).find(".item").length > 1 && $(this).attr("data-loop") != undefined ? $.parseJSON($(this).attr("data-loop")) : false;
+                var nav = $(this).find(".item").length > 1 && $(this).attr("data-nav") != undefined ? $.parseJSON($(this).attr("data-nav")) : false;
+                var dots = $(this).attr("data-dots") != undefined ? $.parseJSON($(this).attr("data-dots")) : false;
+                var items = $(this).attr("data-items") != undefined ? parseInt($(this).attr("data-items")) : 1;
+                var autoplay = $(this).attr("data-autoplay") != undefined ? $.parseJSON($(this).attr("data-autoplay")) : false;
+                var margin = $(this).attr("data-margin") != undefined ? parseInt($(this).attr("data-margin")) : 0;
+                var xs = $(this).attr("data-xs") != undefined ? parseInt($(this).attr("data-xs")) : items;
+                var sm = $(this).attr("data-sm") != undefined ? parseInt($(this).attr("data-sm")) : items;
+                var md = $(this).attr("data-md") != undefined ? parseInt($(this).attr("data-md")) : items;
+                var lg = $(this).attr("data-lg") != undefined ? parseInt($(this).attr("data-lg")) : items;
+                var autoHeight = $(this).attr("data-autoheight") != undefined ? $.parseJSON($(this).attr("data-autoheight")) : false;
+                var dotContainer = $(this).attr("data-dotcontainer") != undefined ? $.parseJSON($(this).attr("data-dotcontainer")) : false;
                 var customNav = $(this).attr("data-custom-nav");
-                var itemvideo =$(this).attr("data-video")!=undefined ? $.parseJSON( $(this).attr("data-video")) : false;
-    
-        
-            var rtl = $("body").attr("dir") == "rtl" ? true : false;
-    
-            var carousel = slider.owlCarousel({
-                loop: loop,
-                nav: nav,
-                dots: dots,
-                items: items,
-                margin: parseInt(margin),
-                autoplay: autoplay,
-                autoHeight: autoHeight,
-                navText: ["",""],
-                rtl: rtl,
-                video:itemvideo,
-                responsive: {
-                    0: { items: xs },
-                    640: { items: xs },
-                    768: { items: sm },
-                    992: { items: md },
-                    1280: { items: lg }
-                },
-                onInitialized: function () {
-                    if (dotContainer) {
-                        slider.append("<div class=\"container controls-container\"></div>");
-                        slider.find(".owl-controls").detach().appendTo('.controls-container');
-                        var i = 1;
-                        slider.find(".owl-dots .owl-dot").each(function () {
-                            $(this).html(i);
-                            i++;
-                        });
+                var itemvideo = $(this).attr("data-video") != undefined ? $.parseJSON($(this).attr("data-video")) : false;
+
+
+                var rtl = $("body").attr("dir") == "rtl" ? true : false;
+
+                var carousel = slider.owlCarousel({
+                    loop: loop,
+                    nav: nav,
+                    dots: dots,
+                    items: items,
+                    margin: parseInt(margin),
+                    autoplay: autoplay,
+                    autoHeight: autoHeight,
+                    navText: ["", ""],
+                    rtl: rtl,
+                    video: itemvideo,
+                    responsive: {
+                        0: { items: xs },
+                        640: { items: xs },
+                        768: { items: sm },
+                        992: { items: md },
+                        1280: { items: lg }
+                    },
+                    onInitialized: function () {
+                        if (dotContainer) {
+                            slider.append("<div class=\"container controls-container\"></div>");
+                            slider.find(".owl-controls").detach().appendTo('.controls-container');
+                            var i = 1;
+                            slider.find(".owl-dots .owl-dot").each(function () {
+                                $(this).html(i);
+                                i++;
+                            });
+                        }
+                        OwlDots();
                     }
-                    OwlDots();
-                }
-            });
-    
-            carousel.on('changed.owl.carousel', function (event) {
-                if (event.item.count - event.page.size == event.item.index)
-                    $(event.target).find('.owl-dots div:last').addClass('active').siblings().removeClass('active');
-    
-                
+                });
+
+                carousel.on('changed.owl.carousel', function (event) {
+                    if (event.item.count - event.page.size == event.item.index)
+                        $(event.target).find('.owl-dots div:last').addClass('active').siblings().removeClass('active');
+
+
                     $(event.target).find(".owl-item").find(".effect").each(function () {
                         $(this).removeClass($(this).data("class"));
                     });
-            
+
                     $(this).find(".owl-item").eq(event.item.index).find(".effect").each(function () {
                         $(this).addClass($(this).data("class"));
                     });
-            });
-    
-            if (customNav != undefined && customNav.length > 0) {
-                $(customNav.split(',')[0]).on('click',function () {
-                    carousel.trigger('prev.owl.carousel');
                 });
-    
-                $(customNav.split(',')[1]).on('click', function () {
-                    carousel.trigger('next.owl.carousel');
-                });
-            }
-    
-            $(window).on('resize', function () {
-                OwlDots();
-            });
-    
-            function OwlDots() {
-                if (slider.find(".owl-controls .owl-dot").length <= 1) {
-                    slider.find(".owl-controls .owl-dot").hide();
-                } else {
-                    slider.find(".owl-controls .owl-dot").show();
+
+                if (customNav != undefined && customNav.length > 0) {
+                    $(customNav.split(',')[0]).on('click', function () {
+                        carousel.trigger('prev.owl.carousel');
+                    });
+
+                    $(customNav.split(',')[1]).on('click', function () {
+                        carousel.trigger('next.owl.carousel');
+                    });
                 }
-            }
-    
+
+                $(window).on('resize', function () {
+                    OwlDots();
+                });
+
+                function OwlDots() {
+                    if (slider.find(".owl-controls .owl-dot").length <= 1) {
+                        slider.find(".owl-controls .owl-dot").hide();
+                    } else {
+                        slider.find(".owl-controls .owl-dot").show();
+                    }
+                }
+
             });
-    
+
         },
-        init: function(){
+        init: function () {
             script.app.owlInit();
             script.app.mobilemenu();
             $("*[data-mask]").each(function () {
@@ -157,67 +157,89 @@
                         break;
                 }
             });
-            $(".burger").on("click",function(){
+            $(".burger").on("click", function () {
                 $('.header-menu').toggleClass("open-menu");
             });
-            $( window ).on( "scroll", function() {
-                if ($(this).scrollTop() > 1){  
+            $(window).on("scroll", function () {
+                if ($(this).scrollTop() > 1) {
                     $('.header-custom-container').addClass("navbar-shrink");
-                  }
-                  else{
+                }
+                else {
                     $('.header-custom-container').removeClass("navbar-shrink");
-                  }
+                }
             });
             $('.owl-carousel').owlCarousel({
-                loop:true,
-                margin:10,
-                nav:false,
-                dots:true,
-                responsive:{
-                    0:{
-                        items:1
+                loop: true,
+                margin: 10,
+                nav: false,
+                dots: true,
+                responsive: {
+                    0: {
+                        items: 1
                     },
-                    600:{
-                        items:1
+                    600: {
+                        items: 1
                     },
-                    1000:{
-                        items:1
+                    1000: {
+                        items: 1
                     }
                 }
             })
+            $('.feedbackCarousel').owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                dots: false,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 1
+                    },
+                    1000: {
+                        items: 1
+                    }
+                }
+            })
+            var owl = $(".feedbackCarousel");
+            $(".next").on("click", function () {
+                owl.trigger('next.owl.carousel');
+            });
+            $(".prev").on("click", function () {
+                owl.trigger('prev.owl.carousel');
+            });
         },
         utility: {
             cookie: {
-                get: function(key) {
+                get: function (key) {
                     var c = $.cookie(key);
                     return c;
                 },
-                add: function(key,value, expiry = 1) {
+                add: function (key, value, expiry = 1) {
                     $.cookie(key, value, { expires: expiry });
                 },
-                remove: function(key) {
+                remove: function (key) {
                     $.removeCookie(key);
                 }
             },
             mask: {
-                pattern: function(thi, pattern) {
+                pattern: function (thi, pattern) {
                     thi.inputmask(pattern);
                 },
-                regex: function(thi) {
+                regex: function (thi) {
                     var pattern = thi.data("mask").split(':')[1];
                     thi.inputmask("", { regex: pattern });
                 },
-                creditCard: function(thi) {
-                    thi.inputmask("", { regex:"[0-9][0-9][0-9][0-9] - [0-9][0-9][0-9][0-9] - [0-9][0-9][0-9][0-9] - [0-9][0-9][0-9][0-9]" });
+                creditCard: function (thi) {
+                    thi.inputmask("", { regex: "[0-9][0-9][0-9][0-9] - [0-9][0-9][0-9][0-9] - [0-9][0-9][0-9][0-9] - [0-9][0-9][0-9][0-9]" });
                 },
-                money: function(thi)
-                {
+                money: function (thi) {
                     thi.maskMoney({ thousands: '', decimal: '.', allowZero: true, precision: 2, affixesStay: false });
                 },
-                phone: function(thi)
-                {
+                phone: function (thi) {
                     var pattern = thi.attr("data-pattern");
-                    thi.inputmask((pattern!=undefined && pattern!=null && pattern!="" ? pattern : "(999) 999 99 99"));
+                    thi.inputmask((pattern != undefined && pattern != null && pattern != "" ? pattern : "(999) 999 99 99"));
                 },
                 number: function (thi) {
                     thi.on("keypress", function (event) {
@@ -226,7 +248,7 @@
                         if (event.keyCode == 46 && instr(thi.value, ".") >= 0)
                             return false;
                     });
-        
+
                 },
                 letter: function (thi) {
                     thi.on("keypress", function (event) {

@@ -1,5 +1,174 @@
-@media (max-width:1366px) { }
-@include media-breakpoint-down(lg)  { }
-@include media-breakpoint-down(md)  { }
-@include media-breakpoint-down(sm)  { }
-@include media-breakpoint-down(def) { }
+.footer {
+    background-image: url('./assets/img/footer-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 100%;
+    position: absolute;
+    color: #fff;
+    @extend .ff--Playfair;
+
+    .logo {
+        font-size: 54px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .text {
+        margin-top: 20px;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 22px;
+        max-width: 380px;
+        height: 123px;
+        flex-shrink: 0;
+    }
+
+    .socialmedia {
+        margin-top: 20px;
+        max-width: 156px;
+        height: 100px;
+        flex-shrink: 0;
+        display: flex;
+        justify-content: space-between;
+        i{
+            font-size: 24px;
+        }
+        a{
+            text-decoration: none;
+            color: #fff;
+            &:hover{
+                color: $color--gold;
+            }
+        }
+    }
+
+    .about {
+        span {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 55px;
+        }
+
+        &-list {
+            list-style: none;
+            gap: 20px;
+            margin-top: 55px;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $color--gold;
+                }
+            }
+            &-item {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 42px;
+            }
+        }
+    }
+    .company {
+        span {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 55px;
+        }
+
+        &-list {
+            list-style: none;
+            gap: 20px;
+            margin-top: 55px;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $color--gold;
+                }
+            }
+            &-item {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 42px;
+            }
+        }
+    }
+    .contact {
+        span {
+            font-size: 26px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin-bottom: 55px;
+        }
+        &-list {
+            list-style: none;
+            gap: 20px;
+            margin-top: 55px;
+            a{
+                text-decoration: none;
+                color: white;
+                &:hover{
+                    color: $color--gold;
+                }
+            }
+            .line{
+                line-height: normal !important;
+            }   
+            &-item {
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 42px;
+            }
+        }
+    }
+    .accordion{
+        @extend .ff--Playfair;
+        &-item{
+            background: transparent;
+        }
+        &-button {
+            background: transparent;
+            color: white;
+            height: 100px;
+            font-size: 22px;
+            .collapsed{
+                &::after{
+                    color: white;
+                }
+                
+                &::before{
+                    color: white;
+                }
+            }
+            &:focus{
+                color: white;
+            }
+        }
+        &-body{
+            background: transparent;
+            ul{
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+@media (max-width:1366px) {}
+
+@include media-breakpoint-down(lg) {}
+
+@include media-breakpoint-down(md) {}
+
+@include media-breakpoint-down(sm) {}
+
+@include media-breakpoint-down(def) {}

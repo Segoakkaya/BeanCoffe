@@ -114,3 +114,14 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'icomoon';
+    src:  url('assets/fonts/icons/icomoon.eot?w6zw7u');
+    src:  url('assets/fonts/icons/icomoon.eot?w6zw7u#iefix') format('embedded-opentype'),
+      url('assets/fonts/icons/icomoon.ttf?w6zw7u') format('truetype'),
+      url('assets/fonts/icons/icomoon.woff?w6zw7u') format('woff'),
+      url('assets/fonts/icons/icomoon.svg?w6zw7u#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
