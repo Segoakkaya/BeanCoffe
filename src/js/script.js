@@ -212,6 +212,7 @@
             $(".burger").on("click",function(){
                 $(this).toggleClass("close");
             });
+            AOS.init();
         },
         utility: {
             cookie: {
