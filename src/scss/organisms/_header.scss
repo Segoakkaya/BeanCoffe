@@ -87,6 +87,10 @@
             font-weight: 500;
             line-height: normal;
             text-decoration: none;
+            transition: 0.3s all;
+            &:hover{
+                filter: contrast(1.5);
+            }
         }
     }
 }

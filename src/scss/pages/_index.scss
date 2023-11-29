@@ -49,7 +49,14 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            transition: 0.3s all;
+            &:hover{
+                background-color: transparent;
+                border: 1px solid $color--gold;
+                a{
+                color: $color--gold !important;
+                }
+            }
             .heroBtn {
                 color: #1E1E1E;
                 @extend .ff--Playfair;
@@ -98,6 +105,12 @@
         justify-content: center;
         align-items: center;
         z-index: 8;
+        transition: 0.3s all;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color--gold;
+            color: $color--gold !important;
+        }
         .discoverBtn {
             color: #1E1E1E;
             @extend .ff--Playfair;
@@ -128,6 +141,7 @@
         position: absolute;
         left: 0;
         top: 78%;
+        z-index: -2;
     }
 }
 
@@ -231,7 +245,10 @@
             display: flex;
             justify-content: center;
             align-items: center;
-
+            transition: 0.3s all;
+            &:hover{
+                filter: contrast(1.5);
+            }
             &-a {
                 text-decoration: none;
                 color: #1E1E1E;
@@ -360,7 +377,7 @@
         align-items: center;
         width: 100%;
         margin-top: 15px;
-
+        
         &-a {
             text-decoration: none;
             text-align: center;
@@ -377,6 +394,12 @@
             border-radius: 24px;
             background: #F9C06A;
             box-shadow: 0px 6px 12px 0px rgba(249, 192, 106, 0.22);
+            transition: 0.3s all;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color--gold;
+            color: $color--gold;
+        }
         }
     }
 }
@@ -447,7 +470,12 @@
         display: flex;
         justify-content: center;
         align-items: center;
-
+        transition: 0.3s all;
+        &:hover{
+            background-color: transparent;
+            border: 1px solid $color--gold;
+            color: $color--gold;
+        }
         a {
             text-decoration: none;
             @extend .ff--Playfair;
