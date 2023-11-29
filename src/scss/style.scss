@@ -1,11 +1,16 @@
 html {
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
 }
 ::-webkit-scrollbar {
     height: 3px;
     width: 7px
 }
+body{
+    cursor: url(./assets/img/cafecursor.png), auto;
+}
 a{
+    cursor: url(./assets/img/cafecursor.png), auto;    
     &:hover{
         color: $color--coffee;
     }
